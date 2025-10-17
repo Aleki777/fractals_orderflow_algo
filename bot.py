@@ -40,27 +40,27 @@ TARGET_CANDLES = int(os.getenv("TARGET_CANDLES", "1000"))
 PORT = int(os.getenv("PORT", "8080"))
 
 # Strategy / sizing params (can be made env later)
-RISK_PER_TRADE = float(os.getenv("RISK_PER_TRADE", "0.002"))  # fraction of equity
-INITIAL_EQUITY = float(os.getenv("INITIAL_EQUITY", "1000.0"))
-MIN_QTY = float(os.getenv("MIN_QTY", "0.0001"))
-MAX_USD_PER_TRADE = float(os.getenv("MAX_USD_PER_TRADE", "5000.0"))
+RISK_PER_TRADE = 
+INITIAL_EQUITY = 
+MIN_QTY = 
+MAX_USD_PER_TRADE = 
 
 # Fees & slippage for simulated fills
-TAKER_FEE_RATE = float(os.getenv("TAKER_FEE_RATE", "0.0006"))
-MAKER_FEE_RATE = float(os.getenv("MAKER_FEE_RATE", "0.0002"))
-SIM_SLIPPAGE_PCT = float(os.getenv("SIM_SLIPPAGE_PCT", "0.0004"))
+TAKER_FEE_RATE = 
+MAKER_FEE_RATE = 
+SIM_SLIPPAGE_PCT =
 
 # Detection params (from your config)
-DELTA_MODE = "relative"
-DELTA_REL_MULTIPLIER = 0.35
-CONFIRM_MULT = 0.5
-TP_R = 1.5
-STOP_PADDING_ATR_MULT = 0.12
-TP_MAX_POINTS = 1000.0
-MIN_GAP = pd.Timedelta("2h")
+DELTA_MODE = 
+DELTA_REL_MULTIPLIER = 
+CONFIRM_MULT = 
+TP_R = 
+STOP_PADDING_ATR_MULT = 
+TP_MAX_POINTS = 
+MIN_GAP = 
 
-HORIZON_CANDLES = int(os.getenv("HORIZON_CANDLES", "40"))
-MONITOR_POLL_SEC = int(os.getenv("MONITOR_POLL_SEC", "6"))
+HORIZON_CANDLES = 
+MONITOR_POLL_SEC = 
 
 # --------------------
 # Globals and state
