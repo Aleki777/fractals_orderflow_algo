@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-bot.py - production-ready (copy/paste) for Render deployment.
+bot.py - production-ready.
 
-Requirements (add to requirements.txt):
+Requirements:
 ccxt, websockets, pandas, numpy, flask, gspread, google-auth
 """
 
@@ -39,7 +39,7 @@ TF_HOURS = int(os.getenv("TF_HOURS", "4"))
 TARGET_CANDLES = int(os.getenv("TARGET_CANDLES", "1000"))
 PORT = int(os.getenv("PORT", "8080"))
 
-# Strategy / sizing params (can be made env later)
+# Strategy / sizing params 
 RISK_PER_TRADE = 
 INITIAL_EQUITY = 
 MIN_QTY = 
@@ -196,8 +196,9 @@ def compute_sr_zones_safe(df_local, n1=3, n2=2, dedupe_pct=0.003, zone_buffer_pc
             "support_zones": support_zones, "resistance_zones": resistance_zones}
 
 # --------------------
-# Detection function (user-provided)
-# --------------------
+# Detection function 
+# --------------------              
+
 def detect_signals_on_df(df_local, support_zones, resistance_zones,
                          sl_buffer_min=50.0,
                          delta_mode=DELTA_MODE,
